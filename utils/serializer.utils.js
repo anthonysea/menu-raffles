@@ -119,6 +119,7 @@ export const addEntryToRaffle = async (id, newEntry) => {
         return true;
       });
   } else {
+    console.log("Duplicate entry, did not submit entry");
     return false;
   }
 

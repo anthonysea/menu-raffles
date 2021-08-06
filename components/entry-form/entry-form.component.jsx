@@ -21,13 +21,13 @@ const EntryForm = ({ raffle }) => {
   });
   
   const onSubmit = async (data) => {
-    console.log("form data: ", data);
-    console.log("form errors: ", errors);
+    // console.log("form data: ", data);
+    // console.log("form errors: ", errors);
 
     const res = await addEntryToRaffle(raffle.id, data);
-    if (!res) {
-      console.log("Duplicate entry, entry not recorded");
-    }
+    // if (!res) {
+    //   console.log("Duplicate entry, entry not recorded");
+    // }
   };
 
   return (

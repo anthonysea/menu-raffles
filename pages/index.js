@@ -1,22 +1,17 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Header from '../components/header/header.component';
-import RaffleList from '../components/raffle-list/raffle-list.component';
-import Layout from '../components/layout/layout.component';
-import { getAllRaffles } from '../utils/serializer.utils';
+import Header from "../components/header/header.component";
+import RaffleList from "../components/raffle-list/raffle-list.component";
+import Layout from "../components/layout/layout.component";
+import { getAllRaffles } from "../utils/serializer.utils";
 
 export default function Home({ raffles }) {
   return (
-    <div>
-      <Head>
-        <title>MENU Skateshop Raffles</title>
-      </Head>
-      <Layout>
-        <Header/>
-        <RaffleList raffles={raffles}/> 
-      </Layout>
-    </div>
-  )
+    <Layout>
+      <Header />
+      <RaffleList raffles={raffles} />
+    </Layout>
+  );
 }
 
 export const getStaticProps = async (context) => {
@@ -24,7 +19,7 @@ export const getStaticProps = async (context) => {
 
   return {
     props: {
-      raffles: raffles, 
-    }
-  }
-}
+      raffles: raffles,
+    },
+  };
+};
