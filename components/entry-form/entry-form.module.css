@@ -1,0 +1,4 @@
+.radioBtnGroup {
+	@apply flex flex-col w-4/5;
+}
+

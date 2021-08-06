@@ -1,0 +1,38 @@
+
+.raffleCard {
+	@apply my-6 pb-4;
+	position: relative;
+}
+
+.raffleCard:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid black;
+}
+
+.enterRaffleBtn {
+	@apply border border-black p-2;
+	transition: all 400ms ease;
+}
+
+.enterRaffleBtn:hover {
+	@apply text-white bg-black
+}
+
+.sizeIcon {
+	@apply px-1 mx-1;
+}
+
+/* Don't apply padding and margin to first item in the list */
+.sizeIcon:first-child {
+	@apply pl-0 ml-0;
+}
+
+/* Add comma after each size */
+.sizeIcon:not(:last-child)::after {
+	content: ",";
+}

@@ -1,0 +1,7 @@
+.formInput {
+	@apply my-1 p-1 pl-2 text-sm border border-gray-500;
+}
+
+.formInputGroup {
+	@apply flex flex-col p-2 my-2;
+}

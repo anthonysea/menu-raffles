@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Code Pro', 'Courier New', Courier, monospace
+}

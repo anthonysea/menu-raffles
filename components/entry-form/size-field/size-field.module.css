@@ -1,0 +1,11 @@
+.sizeBtn {
+  @apply w-full p-2 border border-gray-500;
+}
+
+.selected {
+  @apply bg-blue-600 text-white border-blue-600;
+}
+
+.sizeBtnLabel {
+  @apply w-16 mr-2;
+}
